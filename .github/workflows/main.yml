@@ -17,6 +17,6 @@ jobs:
               uses: azure/arm-deploy@v1
               with:
                   resourceGroupName: ${{ secrets.AZURE_RG }}
-                  template: ./main.bicep
-                  parameters: ./main.bicepparam
+                  template: .github/workflows/main.bicep
+                  parameters: .github/workflows/main.bicepparam
                   failOnStdErr: false
